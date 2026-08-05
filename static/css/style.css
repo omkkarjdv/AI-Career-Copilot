@@ -1,0 +1,293 @@
+/* ==========================
+   Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#eef4ff,#f8fbff);
+    color:#333;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================
+   Layout
+========================== */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+main{
+    flex:1;
+    padding:40px 0;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+    color:white;
+    padding:18px 0;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe082;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:40px;
+}
+
+/* ==========================
+   Card
+========================== */
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-top:25px;
+}
+
+/* ==========================
+   Login & Signup
+========================== */
+
+.auth-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:70vh;
+}
+
+.auth-card{
+    width:100%;
+    max-width:420px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+.auth-card h2{
+    text-align:center;
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+.subtext{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+    font-size:14px;
+}
+
+/* ==========================
+   Forms
+========================== */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    margin-bottom:15px;
+    transition:.3s;
+    font-family:inherit;
+}
+
+textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+}
+
+/* File Input */
+
+input[type="file"]{
+    background:#f5f7fb;
+    border:2px dashed #2563eb;
+    cursor:pointer;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(37,99,235,.3);
+}
+
+/* ==========================
+   Links
+========================== */
+
+.auth-links{
+    text-align:right;
+    margin:12px 0;
+}
+
+.auth-links a,
+.switch-auth a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.switch-auth{
+    text-align:center;
+    margin-top:20px;
+}
+
+/* ==========================
+   Dashboard Result
+========================== */
+
+.red{
+    margin-top:30px;
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.red h3{
+    margin-top:20px;
+    color:#2563eb;
+}
+
+.red ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.red li{
+    margin-bottom:8px;
+}
+
+/* ==========================
+   History
+========================== */
+
+.card hr{
+    margin:20px 0;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* ==========================
+   Welcome Heading
+========================== */
+
+h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+header .container{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.auth-card{
+    padding:30px 20px;
+}
+
+.card{
+    padding:20px;
+}
+
+}

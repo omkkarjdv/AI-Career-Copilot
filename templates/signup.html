@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-card">
+        <h2>Create Account</h2>
+        <p class="subtext">
+            Start your journey with AI Resume Analyser
+        </p>
+        <form method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Create your password" required>
+            <p class="subtext">Use atleast 6 characters</p>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="switch-auth">
+            Already have an account? <a href="/login">Login</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

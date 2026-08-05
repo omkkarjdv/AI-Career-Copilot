@@ -1,0 +1,10 @@
+flask
+sqlalchemy
+pymysql
+openai
+PyPDF2
+python-docx
+python-dotenv
+google-genai
+flask-mail
+itsdangerous
