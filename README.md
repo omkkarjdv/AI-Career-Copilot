@@ -16,7 +16,7 @@ AI Career Copilot is an AI-powered career assistant built using **Flask**, **Goo
 - 🗺️ Personalized Learning Roadmap
 - ❓ Interview Question Suggestions
 - 📚 Resume Analysis History
-- 🔄 Forgot Password (Under Development)
+- 🔄 Forgot Password
 
 ---
 
